@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-08T14:52:53.777Z</updated>
+  <updated>2023-04-08T15:17:24.393Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2023/04/08/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E6%B5%8B%E8%AF%95/"/>
+    <id>http://example.com/2023/04/08/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E6%B5%8B%E8%AF%95/</id>
+    <published>2023-04-08T15:05:49.837Z</published>
+    <updated>2023-04-08T15:17:24.393Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="这是一篇测试文件"><a href="#这是一篇测试文件" class="headerlink" title="这是一篇测试文件"></a>这是一篇测试文件</h1><p>微观经济学的理论体系可以分为以下几个方面，首先是基础知识，然后是市场类型，然后是博弈论和信息经济学，下面分别介绍。</p><h2 id="微观经济学基础知识"><a href="#微观经济学基础知识" class="headerlink" title="微观经济学基础知识"></a>微观经济学基础知识</h2><h2 id="市场分类"><a href="#市场分类" class="headerlink" title="市场分类"></a>市场分类</h2><p>公式测试$1$</p><script type="math/tex; mode=display">a^2+b^2=c^2</script><script type="math/tex; mode=display">\sum</script><h3 id="完全竞争市场"><a href="#完全竞争市场" class="headerlink" title="完全竞争市场"></a>完全竞争市场</h3><h3 id="垄断市场"><a href="#垄断市场" class="headerlink" title="垄断市场"></a>垄断市场</h3><h3 id="寡头垄断"><a href="#寡头垄断" class="headerlink" title="寡头垄断"></a>寡头垄断</h3><h3 id="垄断竞争"><a href="#垄断竞争" class="headerlink" title="垄断竞争"></a>垄断竞争</h3><h2 id="博弈论"><a href="#博弈论" class="headerlink" title="博弈论"></a>博弈论</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;这是一篇测试文件&quot;&gt;&lt;a href=&quot;#这是一篇测试文件&quot; class=&quot;headerlink&quot; title=&quot;这是一篇测试文件&quot;&gt;&lt;/a&gt;这是一篇测试文件&lt;/h1&gt;&lt;p&gt;微观经济学的理论体系可以分为以下几个方面，首先是基础知识，然后是市场类型，然后是博弈论和信息</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>微观经济学</title>
