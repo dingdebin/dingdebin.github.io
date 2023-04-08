@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-08T13:35:27.667Z</updated>
+  <updated>2023-04-08T14:52:53.777Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,8 +21,16 @@
     <link href="http://example.com/2023/04/08/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     <id>http://example.com/2023/04/08/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</id>
     <published>2023-04-08T13:35:27.000Z</published>
-    <updated>2023-04-08T13:35:27.667Z</updated>
+    <updated>2023-04-08T14:52:53.777Z</updated>
     
+    <content type="html"><![CDATA[<p>这是微观经济学</p><script type="math/tex; mode=display">a^2+b^2=c^2</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这是微观经济学&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a^2+b^2=c^2&lt;/script&gt;</summary>
+      
     
     
     
