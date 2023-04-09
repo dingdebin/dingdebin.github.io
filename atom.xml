@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-09T03:26:45.349Z</updated>
+  <updated>2023-04-09T04:01:27.281Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>货币金融学</title>
+    <link href="http://example.com/2023/04/09/%E8%B4%A7%E5%B8%81%E9%87%91%E8%9E%8D%E5%AD%A6/"/>
+    <id>http://example.com/2023/04/09/%E8%B4%A7%E5%B8%81%E9%87%91%E8%9E%8D%E5%AD%A6/</id>
+    <published>2023-04-09T04:01:27.000Z</published>
+    <updated>2023-04-09T04:01:27.281Z</updated>
+    
+    <content type="html"><![CDATA[<p>推荐书籍：弗雷德里克·S·米什金的货币金融学，人民大学出版社。</p><p>英文译名为：The Economics of Money,Banking and Financial Markets</p><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>货币金融学，也被称为货币银行学，主要研究货币及其相关关系，以宏观经济和中央银行的视角研究金融市场。</p><h2 id="知识关系"><a href="#知识关系" class="headerlink" title="知识关系"></a>知识关系</h2><p>货币金融学的主</p><h1 id="利率"><a href="#利率" class="headerlink" title="利率"></a>利率</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;推荐书籍：弗雷德里克·S·米什金的货币金融学，人民大学出版社。&lt;/p&gt;
+&lt;p&gt;英文译名为：The Economics of Money,Banking and Financial Markets&lt;/p&gt;
+&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;he</summary>
+      
+    
+    
+    
+    <category term="经济学" scheme="http://example.com/categories/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+    <category term="金融学" scheme="http://example.com/categories/%E7%BB%8F%E6%B5%8E%E5%AD%A6/%E9%87%91%E8%9E%8D%E5%AD%A6/"/>
+    
+    
+    <category term="货币" scheme="http://example.com/tags/%E8%B4%A7%E5%B8%81/"/>
+    
+    <category term="利率" scheme="http://example.com/tags/%E5%88%A9%E7%8E%87/"/>
+    
+  </entry>
   
   <entry>
     <title>宏观经济学</title>
