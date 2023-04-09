@@ -36,9 +36,9 @@ $ git pull
 <p>Easily enable fast AJAX navigation on any website (using pushState() + XHR)</p>
 </blockquote>
 <p>Pjax is <strong>a standalone JavaScript module</strong> that uses <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX">AJAX</a> (XmlHttpRequest) and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history">pushState()</a> to deliver a fast browsing experience.</p>
-<p><em>It allows you to completely transform the user experience of standard websites (server-side generated or static ones) to make users feel like they are browsing an app, especially for those with low bandwidth connections.</em></p>
+<p>_It allows you to completely transform the user experience of standard websites (server-side generated or static ones) to make users feel like they are browsing an app, especially for those with low bandwidth connections._</p>
 <p><strong>No more full page reloads. No more multiple HTTP requests.</strong></p>
-<p><em>Pjax does not rely on other libraries, like jQuery or similar. It is written entirely in vanilla JS.</em></p>
+<p>_Pjax does not rely on other libraries, like jQuery or similar. It is written entirely in vanilla JS._</p>
 <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ul>
 <li><p>You can link directly to the <a href="https://cdn.jsdelivr.net/npm/pjax/pjax.js">bundle</a>:</p>
 <pre><code class="lang-html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/pjax@VERSION/pjax.js&quot;&gt;&lt;/script&gt;
@@ -71,8 +71,8 @@ npm run build
 </li>
 </ul>
 <hr>
-<h2 id="What-Pjax-Does"><a href="#What-Pjax-Does" class="headerlink" title="What Pjax Does"></a>What Pjax Does</h2><p><em>Under the hood, it’s just ONE HTTP request with a <code>pushState()</code> call.</em></p>
-<p>Pjax loads pages using AJAX and updates the browser’s current URL using <code>pushState()</code> <em>without</em> reloading your page’s layout or any resources (JS, CSS), giving a fast page load.</p>
+<h2 id="What-Pjax-Does"><a href="#What-Pjax-Does" class="headerlink" title="What Pjax Does"></a>What Pjax Does</h2><p>_Under the hood, it’s just ONE HTTP request with a <code>pushState()</code> call._</p>
+<p>Pjax loads pages using AJAX and updates the browser’s current URL using <code>pushState()</code> _without_ reloading your page’s layout or any resources (JS, CSS), giving a fast page load.</p>
 <p>It works with all permalinks and can update all the parts of the page you want (including HTML metas, title, and navigation state).</p>
 <p>In the case of <a href="http://caniuse.com/#search=pushstate">browsers that don’t support <code>history.pushState()</code></a>, Pjax gracefully degrades and does not do anything at all.</p>
 <p>Additionally, Pjax:</p>
@@ -86,7 +86,7 @@ npm run build
 <li>Is only around 6kb (minified and gzipped).</li>
 </ul>
 <h2 id="How-Pjax-Works"><a href="#How-Pjax-Works" class="headerlink" title="How Pjax Works"></a>How Pjax Works</h2><ul>
-<li>It listens to every click on links <em>you want</em> (by default all of them).</li>
+<li>It listens to every click on links _you want_ (by default all of them).</li>
 <li>When an internal link is clicked, Pjax fetches the page’s HTML via AJAX.</li>
 <li>Pjax renders the page’s DOM tree (without loading any resources - images, CSS, JS, etc).</li>
 <li>It checks that all defined parts can be replaced:<ul>
@@ -96,7 +96,7 @@ npm run build
 </li>
 <li>Then it updates the browser’s current URL using <code>pushState()</code>.</li>
 </ul>
-<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p><em>Pjax is fully automatic</em>. You don’t need to change anything about your existing HTML,<br>you just need to designate which elements on your page that you want to be replaced when your site is navigated.</p>
+<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>_Pjax is fully automatic_. You don’t need to change anything about your existing HTML,<br>you just need to designate which elements on your page that you want to be replaced when your site is navigated.</p>
 <p>Consider the following page.</p>
 <pre><code class="lang-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -156,7 +156,7 @@ npm run build
 })
 </code></pre>
 <p>Now, when someone in a Pjax-compatible browser clicks an internal link on the page, the content of each of the selectors will be replaced with the specific content pieces found in the next page’s content.</p>
-<p><em>Magic! For real!</em> <strong>There is no need to do anything server-side!</strong></p>
+<p>_Magic! For real!_ <strong>There is no need to do anything server-side!</strong></p>
 <h2 id="Differences-with-jQuery-pjax"><a href="#Differences-with-jQuery-pjax" class="headerlink" title="Differences with jQuery-pjax"></a>Differences with <a href="https://github.com/defunkt/jquery-pjax">jQuery-pjax</a></h2><ul>
 <li>No jQuery dependency.</li>
 <li>Not limited to a container.</li>
@@ -268,7 +268,7 @@ var pjax = new Pjax({
 &lt;/html&gt;
 </code></pre>
 <p>This example is correct and should work “as expected”.</p>
-<p><strong>NOTE:</strong> <em>If the current page and new page do not have the same amount of DOM elements, Pjax will fall back to normal page load.</em></p>
+<p><strong>NOTE:</strong> _If the current page and new page do not have the same amount of DOM elements, Pjax will fall back to normal page load._</p>
 <h3 id="switches-Object-default"><a href="#switches-Object-default" class="headerlink" title="switches (Object, default: {})"></a><code>switches</code> (Object, default: <code>{}</code>)</h3><p>This is an object containing callbacks that can be used to switch old elements with new elements.</p>
 <p>The object keys should be one of the defined selectors (from the <code>selectors</code> option).</p>
 <p>Examples:</p>
@@ -334,7 +334,7 @@ var pjax = new Pjax({
   }
 })
 </code></pre>
-<p><em>Note that <code>remove</code> includes <code>Animated--reverse</code> which is a simple way to not have to have a duplicate transition (slideIn + reverse =&gt; slideOut).</em></p>
+<p>_Note that <code>remove</code> includes <code>Animated--reverse</code> which is a simple way to not have to have a duplicate transition (slideIn + reverse =&gt; slideOut)._</p>
 <p>Here is some css that works well with the above configuration:</p>
 <pre><code class="lang-css">/*
   Note: If your content elements don&#39;t have a fixed width it can cause
@@ -450,9 +450,9 @@ var pjax = new Pjax({
   var pjax = new Pjax()
 </code></pre>
 <p>(Note that if <code>cacheBust</code> is set to <code>true</code>, the code that checks if the href is the same as the current page’s URL will not work, due to the query string appended to force a cache bust).</p>
-<h3 id="timeout-Integer-default-0"><a href="#timeout-Integer-default-0" class="headerlink" title="timeout (Integer, default: 0)"></a><code>timeout</code> (Integer, default: <code>0</code>)</h3><p>The timeout in <em>milliseconds</em> for the XHR requests. Set to <code>0</code> to disable the timeout.</p>
+<h3 id="timeout-Integer-default-0"><a href="#timeout-Integer-default-0" class="headerlink" title="timeout (Integer, default: 0)"></a><code>timeout</code> (Integer, default: <code>0</code>)</h3><p>The timeout in _milliseconds_ for the XHR requests. Set to <code>0</code> to disable the timeout.</p>
 <h2 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h2><p>Pjax fires a number of events regardless of how it’s invoked.</p>
-<p>All events are fired from the <em>document</em>, not the link that was clicked.</p>
+<p>All events are fired from the _document_, not the link that was clicked.</p>
 <ul>
 <li><code>pjax:send</code> - Fired after the Pjax request begins.</li>
 <li><code>pjax:complete</code> - Fired after the Pjax request finishes.</li>
@@ -487,7 +487,7 @@ var pjax = new Pjax()
 
 document.addEventListener(&quot;pjax:success&quot;, whenDOMReady)
 </code></pre>
-<p><em>Note: Don’t create the Pjax instance in the <code>whenDOMReady</code> function.</em></p>
+<p>_Note: Don’t create the Pjax instance in the <code>whenDOMReady</code> function._</p>
 <p>If you want to just update a specific part (which is a good idea), you can add the DOM-related code in a function and re-execute this function when the <code>pjax:success</code> event is fired.</p>
 <pre><code class="lang-js">// do your global stuff
 //... DOM ready code
@@ -508,7 +508,7 @@ document.addEventListener(&quot;pjax:success&quot;, whenContainerReady)
 <li><p>Edit your Disqus snippet like the one below.</p>
 </li>
 </ul>
-<h4 id="Disqus-snippet-before-Pjax-integration"><a href="#Disqus-snippet-before-Pjax-integration" class="headerlink" title="Disqus snippet before Pjax integration"></a>Disqus snippet <em>before</em> Pjax integration</h4><pre><code class="lang-html">&lt;script&gt;
+<h4 id="Disqus-snippet-before-Pjax-integration"><a href="#Disqus-snippet-before-Pjax-integration" class="headerlink" title="Disqus snippet _before_ Pjax integration"></a>Disqus snippet _before_ Pjax integration</h4><pre><code class="lang-html">&lt;script&gt;
   var disqus_shortname = &#39;YOURSHORTNAME&#39;
   var disqus_identifier = &#39;PAGEID&#39;
   var disqus_url = &#39;PAGEURL&#39;
@@ -520,7 +520,7 @@ document.addEventListener(&quot;pjax:success&quot;, whenContainerReady)
   })(document)
 &lt;/script&gt;
 </code></pre>
-<h4 id="Disqus-snippet-after-Pjax-integration"><a href="#Disqus-snippet-after-Pjax-integration" class="headerlink" title="Disqus snippet after Pjax integration"></a>Disqus snippet <em>after</em> Pjax integration</h4><pre><code class="lang-html">&lt;div class=&quot;js-Pjax&quot;&gt;&lt;!-- needs to be here on every Pjax-ified page, even if empty --&gt;
+<h4 id="Disqus-snippet-after-Pjax-integration"><a href="#Disqus-snippet-after-Pjax-integration" class="headerlink" title="Disqus snippet _after_ Pjax integration"></a>Disqus snippet _after_ Pjax integration</h4><pre><code class="lang-html">&lt;div class=&quot;js-Pjax&quot;&gt;&lt;!-- needs to be here on every Pjax-ified page, even if empty --&gt;
 &lt;!-- if (some condition) { // eventual server-side test to know whether or not you include this script --&gt;
   &lt;script&gt;
     var disqus_shortname = &#39;YOURSHORTNAME&#39;

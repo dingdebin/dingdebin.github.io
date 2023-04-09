@@ -352,7 +352,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-04-09 11:24:02" itemprop="dateModified" datetime="2023-04-09T11:24:02+08:00">2023-04-09</time>
+                <time title="修改时间：2023-04-09 14:35:16" itemprop="dateModified" datetime="2023-04-09T14:35:16+08:00">2023-04-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -361,6 +361,10 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">经济学</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BB%8F%E6%B5%8E%E5%AD%A6/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">微观经济学</span></a>
                 </span>
             </span>
 
@@ -375,8 +379,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>这是微观经济学</p>
-<script type="math/tex; mode=display">
+          <h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><ul>
+<li>先修知识：无</li>
+</ul>
+<h2 id="推荐书籍"><a href="#推荐书籍" class="headerlink" title="推荐书籍"></a>推荐书籍</h2><p>本科：<br>朱善利的《<a target="_blank" rel="noopener" href="https://www.pup.cn/bookDetail?name=%25E5%25BE%25AE%25E8%25A7%2582%25E7%25BB%258F%25E6%25B5%258E%25E5%25AD%25A6%28%25E7%25AC%25AC2%25E7%2589%2588%29&amp;id=559fdaec186011e9805800163e0a6607&amp;0.8921016508524792">微观经济学</a>》，北京大学出版社；<br>N. 格里高利·曼昆的《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/35005103/">经济学原理·微观经济学分册</a>》</p>
+<p>硕士：<br>蒋殿春的《<a target="_blank" rel="noopener" href="https://www.pup.cn/bookDetail?name=%25E9%25AB%2598%25E7%25BA%25A7%25E5%25BE%25AE%25E8%25A7%2582%25E7%25BB%258F%25E6%25B5%258E%25E5%25AD%25A6%28%25E7%25AC%25AC%25E4%25BA%258C%25E7%2589%2588%29&amp;id=d3c15577185f11e9805800163e0a6607&amp;0.7354685436621149">高级微观经济学</a>》</p>
+<p>博士：安德鲁·马斯-克莱尔 / 迈克尔·D·温斯顿 / 杰里·R·格林 的《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/26271762/">微观经济理论</a>》，简称MWG</p>
+<h2 id="推荐资料"><a href="#推荐资料" class="headerlink" title="推荐资料"></a>推荐资料</h2><p>网课：**大学</p>
+<h1 id="微观经济理论概述"><a href="#微观经济理论概述" class="headerlink" title="微观经济理论概述"></a>微观经济理论概述</h1><h2 id="弹性"><a href="#弹性" class="headerlink" title="弹性"></a>弹性</h2><h2 id="消费者剩余理论"><a href="#消费者剩余理论" class="headerlink" title="消费者剩余理论"></a>消费者剩余理论</h2><h1 id="市场"><a href="#市场" class="headerlink" title="市场"></a>市场</h1><h1 id="博弈论"><a href="#博弈论" class="headerlink" title="博弈论"></a>博弈论</h1><script type="math/tex; mode=display">
 a^2+b^2=c^2</script>
       
     </div>
@@ -531,7 +541,7 @@ a^2+b^2=c^2</script>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -689,6 +699,61 @@ window.addEventListener('pjax:success', () => {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
