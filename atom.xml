@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-09T06:36:03.654Z</updated>
+  <updated>2023-04-09T07:06:58.349Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>博客建立和维护</title>
+    <link href="http://example.com/2023/04/09/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E5%92%8C%E7%BB%B4%E6%8A%A4/"/>
+    <id>http://example.com/2023/04/09/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%E5%92%8C%E7%BB%B4%E6%8A%A4/</id>
+    <published>2023-04-09T06:41:41.000Z</published>
+    <updated>2023-04-09T07:06:58.349Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="特别鸣谢"><a href="#特别鸣谢" class="headerlink" title="特别鸣谢"></a>特别鸣谢</h1><ul><li>特别感谢我的小伙伴<a href="https://yliu-fe.github.io">yi_liu</a>提供的知识支持和建站相关问题的解决，也推荐他的博客站点。</li><li>感谢知乎大佬<a href="https://www.zhihu.com/people/cxyxiaowu">程序员吴师兄</a>的帖子<a href="https://zhuanlan.zhihu.com/p/371995929">如何在 GitHub 上写博客？</a>，我是照着这份保姆级教程完成的博客搭建，连主题设置都一样，以后在写的过程中会继续探索。</li><li>感谢知乎大佬<a href="https://www.zhihu.com/people/codesdhx">吴师兄学算法</a>的帖子<a href="https://zhuanlan.zhihu.com/p/369486197">还不会使用 GitHub ？ GitHub 教程来了！万字图文详解</a>，帮助我解决git的入门问题。</li><li>感谢B站网友<a href="https://space.bilibili.com/338944611">BruceOxl</a>的帖子<a href="https://www.bilibili.com/read/cv12966432">[Hexo博客搭建]第5章 Hexo 中支持 Mathjax</a>，解决了我博客中Latex公式支持的问题。</li></ul><p>作为一个非计算机专业的学生，在前人的指导下一步一步完成博客的建立是一件非常有成就感的事情，其间也有一些出错，排错的过程依然值得记录。</p><h1 id="建立博客"><a href="#建立博客" class="headerlink" title="建立博客"></a>建立博客</h1><h1 id="mathjax公式支持"><a href="#mathjax公式支持" class="headerlink" title="mathjax公式支持"></a>mathjax公式支持</h1><p>根据B站帖子<a href="https://www.bilibili.com/read/cv12966432">[Hexo博客搭建]第5章 Hexo 中支持 Mathjax</a>，我将相关步骤摘录至此，以防忘记。</p><ol><li>使用Kramed代替 Marked</li><li>卸载hexo-math</li><li>更新mathjax的CDN链接</li><li>更改默认转义规则</li><li>开启mathjax</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;特别鸣谢&quot;&gt;&lt;a href=&quot;#特别鸣谢&quot; class=&quot;headerlink&quot; title=&quot;特别鸣谢&quot;&gt;&lt;/a&gt;特别鸣谢&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;特别感谢我的小伙伴&lt;a href=&quot;https://yliu-fe.github.io&quot;&gt;yi_liu&lt;/a&gt;提</summary>
+      
+    
+    
+    
+    <category term="计算机相关" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3/"/>
+    
+    <category term="github" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3/github/"/>
+    
+    
+    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    <category term="github" scheme="http://example.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
     <title>银行管理</title>
     <link href="http://example.com/2023/04/09/%E9%93%B6%E8%A1%8C%E7%AE%A1%E7%90%86/"/>
     <id>http://example.com/2023/04/09/%E9%93%B6%E8%A1%8C%E7%AE%A1%E7%90%86/</id>
     <published>2023-04-09T04:13:07.000Z</published>
-    <updated>2023-04-09T06:36:03.654Z</updated>
+    <updated>2023-04-09T06:40:44.591Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>正文</p><ul><li>大</li><li>小</li></ul><p>这是啥</p>]]></content>
     
@@ -43,7 +72,7 @@
     <link href="http://example.com/2023/04/09/%E8%B4%A7%E5%B8%81%E9%87%91%E8%9E%8D%E5%AD%A6/"/>
     <id>http://example.com/2023/04/09/%E8%B4%A7%E5%B8%81%E9%87%91%E8%9E%8D%E5%AD%A6/</id>
     <published>2023-04-09T04:01:27.000Z</published>
-    <updated>2023-04-09T04:01:27.281Z</updated>
+    <updated>2023-04-09T06:40:34.054Z</updated>
     
     <content type="html"><![CDATA[<p>推荐书籍：弗雷德里克·S·米什金的货币金融学，人民大学出版社。</p><p>英文译名为：The Economics of Money,Banking and Financial Markets</p><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>货币金融学，也被称为货币银行学，主要研究货币及其相关关系，以宏观经济和中央银行的视角研究金融市场。</p><h2 id="知识关系"><a href="#知识关系" class="headerlink" title="知识关系"></a>知识关系</h2><p>货币金融学的主</p><h1 id="利率"><a href="#利率" class="headerlink" title="利率"></a>利率</h1>]]></content>
     
@@ -73,7 +102,7 @@
     <link href="http://example.com/2023/04/09/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     <id>http://example.com/2023/04/09/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</id>
     <published>2023-04-09T03:26:45.000Z</published>
-    <updated>2023-04-09T03:26:45.349Z</updated>
+    <updated>2023-04-09T06:40:27.737Z</updated>
     
     
     
@@ -86,9 +115,9 @@
     <link href="http://example.com/2023/04/08/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     <id>http://example.com/2023/04/08/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</id>
     <published>2023-04-08T13:35:27.000Z</published>
-    <updated>2023-04-09T06:35:16.771Z</updated>
+    <updated>2023-04-09T07:10:54.298Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><ul><li>先修知识：无</li></ul><h2 id="推荐书籍"><a href="#推荐书籍" class="headerlink" title="推荐书籍"></a>推荐书籍</h2><p>本科：<br>朱善利的《<a href="https://www.pup.cn/bookDetail?name=%25E5%25BE%25AE%25E8%25A7%2582%25E7%25BB%258F%25E6%25B5%258E%25E5%25AD%25A6%28%25E7%25AC%25AC2%25E7%2589%2588%29&amp;id=559fdaec186011e9805800163e0a6607&amp;0.8921016508524792">微观经济学</a>》，北京大学出版社；<br>N. 格里高利·曼昆的《<a href="https://book.douban.com/subject/35005103/">经济学原理·微观经济学分册</a>》</p><p>硕士：<br>蒋殿春的《<a href="https://www.pup.cn/bookDetail?name=%25E9%25AB%2598%25E7%25BA%25A7%25E5%25BE%25AE%25E8%25A7%2582%25E7%25BB%258F%25E6%25B5%258E%25E5%25AD%25A6%28%25E7%25AC%25AC%25E4%25BA%258C%25E7%2589%2588%29&amp;id=d3c15577185f11e9805800163e0a6607&amp;0.7354685436621149">高级微观经济学</a>》</p><p>博士：安德鲁·马斯-克莱尔 / 迈克尔·D·温斯顿 / 杰里·R·格林 的《<a href="https://book.douban.com/subject/26271762/">微观经济理论</a>》，简称MWG</p><h2 id="推荐资料"><a href="#推荐资料" class="headerlink" title="推荐资料"></a>推荐资料</h2><p>网课：**大学</p><h1 id="微观经济理论概述"><a href="#微观经济理论概述" class="headerlink" title="微观经济理论概述"></a>微观经济理论概述</h1><h2 id="弹性"><a href="#弹性" class="headerlink" title="弹性"></a>弹性</h2><h2 id="消费者剩余理论"><a href="#消费者剩余理论" class="headerlink" title="消费者剩余理论"></a>消费者剩余理论</h2><h1 id="市场"><a href="#市场" class="headerlink" title="市场"></a>市场</h1><h1 id="博弈论"><a href="#博弈论" class="headerlink" title="博弈论"></a>博弈论</h1><script type="math/tex; mode=display">a^2+b^2=c^2</script>]]></content>
+    <content type="html"><![CDATA[<h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><ul><li>先修知识：无</li></ul><h2 id="推荐书籍"><a href="#推荐书籍" class="headerlink" title="推荐书籍"></a>推荐书籍</h2><p>本科：<br>朱善利的《<a href="https://www.pup.cn/bookDetail?name=%25E5%25BE%25AE%25E8%25A7%2582%25E7%25BB%258F%25E6%25B5%258E%25E5%25AD%25A6%28%25E7%25AC%25AC2%25E7%2589%2588%29&amp;id=559fdaec186011e9805800163e0a6607&amp;0.8921016508524792">微观经济学</a>》，北京大学出版社；<br>N. 格里高利·曼昆的《<a href="https://book.douban.com/subject/35005103/">经济学原理·微观经济学分册</a>》</p><p>硕士：<br>蒋殿春的《<a href="https://www.pup.cn/bookDetail?name=%25E9%25AB%2598%25E7%25BA%25A7%25E5%25BE%25AE%25E8%25A7%2582%25E7%25BB%258F%25E6%25B5%258E%25E5%25AD%25A6%28%25E7%25AC%25AC%25E4%25BA%258C%25E7%2589%2588%29&amp;id=d3c15577185f11e9805800163e0a6607&amp;0.7354685436621149">高级微观经济学</a>》</p><p>博士：安德鲁·马斯-克莱尔 / 迈克尔·D·温斯顿 / 杰里·R·格林 的《<a href="https://book.douban.com/subject/26271762/">微观经济理论</a>》，简称MWG</p><h2 id="推荐资料"><a href="#推荐资料" class="headerlink" title="推荐资料"></a>推荐资料</h2><p>网课：**大学</p><p>再来几个公式的测试，这是行内公式$\sum_{i=a}^{i=b}=3i^2 $，这是矩阵</p><script type="math/tex; mode=display">\begin{matrix}1 & 2 &3 \\ 4 & 5 & 6\end{matrix}</script><p>这是行间公式$$<br>\vec{F}=m \frac{d \vec{v}}{dt}+ \vec{v}\frac{dm}{dt}</p><script type="math/tex; mode=display"></script><p>A={\left[ a_{ij}\right]_{m \times n}},B={\left[ b_{ij}\right]_{n \times s}}\\<br>c_{ij}= \sum \limits_{k=1}^a_{ik}b_{kj}\\<br>C=AB=\left[ c_{ij}\right]_{m \times s}<br>= \left[ \sum \limits_{k=1}^{n}a_{ik}b_{kj}\right]_{m \times s}</p><script type="math/tex; mode=display"># 微观经济理论概述## 弹性## 消费者剩余理论# 市场# 博弈论</script><p>a^2+b^2=c^2<br>$$</p>]]></content>
     
     
       
