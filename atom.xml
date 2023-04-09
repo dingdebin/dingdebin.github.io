@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>金融学习路径</title>
+  <title>学习路径</title>
   
   <subtitle>金融学、金融工程学习路径</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-09T04:01:27.281Z</updated>
+  <updated>2023-04-09T04:05:57.729Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>私密文章测试</title>
+    <link href="http://example.com/2023/04/09/%E7%A7%81%E5%AF%86%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/"/>
+    <id>http://example.com/2023/04/09/%E7%A7%81%E5%AF%86%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/</id>
+    <published>2023-04-09T04:05:04.235Z</published>
+    <updated>2023-04-09T04:05:57.729Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>征文</p><ul><li>大<br>～这是啥</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;&gt;&lt;/a&gt;一级标题&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>货币金融学</title>
