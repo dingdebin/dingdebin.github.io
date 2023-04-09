@@ -1,0 +1,96 @@
+site_name: 金融学习
+site_url: https://dingdebin.github.io
+site_author: dingdebin
+site_description: 我的个人博客
+
+repo_name: dingdebin
+repo_url: https://github.com/dingdebin/dingdebin.github.io
+
+nav:
+  - 关于:
+    - About/index.md
+    - hello-world.md
+  - 经济学知识:
+    - Economics/微观经济学.md
+    - Economics/宏观经济学.md
+    - Economics/货币金融学.md
+    - Economics/银行管理.md
+  - 计算机知识:
+    - Computer/博客建立和维护.md
+
+theme:
+  name: material
+  language: zh
+  palette: 
+        # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: 切换为夜间模式
+      primary: indigo
+      accent: orange
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 切换为日间模式
+      accent: cyan
+
+  font: 
+    text: Noto Sans SC
+    code: Roboto Mono
+
+  features:
+    - header.autohide
+    - navigation.tracking
+    - navigation.tabs
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dingdebin
+      name: GitHub | dingdebin
+
+plugins:
+  - search:
+      lang: 
+        -en
+        -ja
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.blocks.admonition:
+      types:
+      - new
+      - settings
+      - note
+      - abstract
+      - info
+      - tip
+      - success
+      - question
+      - warning
+      - failure
+      - danger
+      - bug
+      - example
+      - quote
+  - pymdownx.blocks.details:
+  - pymdownx.blocks.definition:
+  - pymdownx.blocks.tab:
+      alternate_style: True
