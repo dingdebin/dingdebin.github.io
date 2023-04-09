@@ -17,6 +17,9 @@ nav:
     - Economics/银行管理.md
   - 计算机知识:
     - Computer/博客建立和维护.md
+    - Computer/大学计算机基础.md
+    - Computer/机器学习.md
+    - Computer/深度学习.md
 
 theme:
   name: material
