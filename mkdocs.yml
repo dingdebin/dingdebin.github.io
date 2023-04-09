@@ -68,7 +68,10 @@ plugins:
       lang: 
         -en
         -ja
-
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
