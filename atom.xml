@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-09T04:01:27.281Z</updated>
+  <updated>2023-04-09T06:36:03.654Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>银行管理</title>
+    <link href="http://example.com/2023/04/09/%E9%93%B6%E8%A1%8C%E7%AE%A1%E7%90%86/"/>
+    <id>http://example.com/2023/04/09/%E9%93%B6%E8%A1%8C%E7%AE%A1%E7%90%86/</id>
+    <published>2023-04-09T04:13:07.000Z</published>
+    <updated>2023-04-09T06:36:03.654Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>正文</p><ul><li>大</li><li>小</li></ul><p>这是啥</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;&gt;&lt;/a&gt;一级标题&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a</summary>
+      
+    
+    
+    
+    <category term="金融机构" scheme="http://example.com/categories/%E9%87%91%E8%9E%8D%E6%9C%BA%E6%9E%84/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>货币金融学</title>
