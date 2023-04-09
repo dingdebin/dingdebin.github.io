@@ -7,8 +7,9 @@ repo_name: dingdebin
 repo_url: https://github.com/dingdebin/dingdebin.github.io
 
 nav:
-  - 关于:
+  - 关于博客:
     - index.md
+    - content.md
   - 数学知识:
     - Math/概率论.md
     - Math/数理统计.md
