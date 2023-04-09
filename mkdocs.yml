@@ -8,8 +8,10 @@ repo_url: https://github.com/dingdebin/dingdebin.github.io
 
 nav:
   - 关于:
-    - About/index.md
-    - hello-world.md
+    - about.md
+  - 数学知识:
+    - Math/概率论.md
+    - Math/数理统计.md
   - 经济学知识:
     - Economics/微观经济学.md
     - Economics/宏观经济学.md
