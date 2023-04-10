@@ -98,7 +98,7 @@ nav:
     - Math/概率论.md
     - Math/数理统计.md
   - 经济学知识:
-    - Economics/微观经济学.md
+    - Economics/微观经济学/微观经济学-导言.md
     - Economics/宏观经济学.md
     - Economics/货币金融学.md
     - Economics/银行管理.md
@@ -107,3 +107,5 @@ nav:
     - Computer/大学计算机基础.md
     - Computer/机器学习.md
     - Computer/深度学习.md
+  - 个人向:
+    - Entertainment/一些趣事.md
