@@ -6,24 +6,6 @@ site_description: 我的个人博客
 repo_name: dingdebin
 repo_url: https://github.com/dingdebin/dingdebin.github.io
 
-nav:
-  - 关于博客:
-    - index.md
-    - content.md
-  - 数学知识:
-    - Math/概率论.md
-    - Math/数理统计.md
-  - 经济学知识:
-    - Economics/微观经济学.md
-    - Economics/宏观经济学.md
-    - Economics/货币金融学.md
-    - Economics/银行管理.md
-  - 计算机知识:
-    - Computer/博客建立和维护.md
-    - Computer/大学计算机基础.md
-    - Computer/机器学习.md
-    - Computer/深度学习.md
-
 theme:
   name: material
   language: zh
@@ -68,6 +50,7 @@ plugins:
       lang: 
         -en
         -ja
+  - git-revision-date-localized
       
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -105,3 +88,22 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+nav:
+  - 关于博客:
+    - index.md
+    - content.md
+  - 数学知识:
+    - Math/概率论.md
+    - Math/数理统计.md
+  - 经济学知识:
+    - Economics/微观经济学.md
+    - Economics/宏观经济学.md
+    - Economics/货币金融学.md
+    - Economics/银行管理.md
+  - 计算机知识:
+    - Computer/博客建立和维护.md
+    - Computer/大学计算机基础.md
+    - Computer/机器学习.md
+    - Computer/深度学习.md
