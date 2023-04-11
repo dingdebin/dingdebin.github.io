@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 参考[csdiy.wiki](https://csdiy.wiki)的课程模板制作: )
 # 课程名称
 
