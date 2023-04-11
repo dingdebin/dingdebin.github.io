@@ -38,12 +38,17 @@ theme:
     - search.suggest
     - content.code.copy
     - content.code.annotate
+    - navigation.footer
+    - navigation.top # 一键回顶部
+  custom_dir: overrides
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/dingdebin
       name: GitHub | dingdebin
+
+copyright: Copyright &copy; 2023-present D. Ding
 
 plugins:
   - search:
@@ -93,19 +98,28 @@ extra_javascript:
 nav:
   - 关于博客:
     - index.md
-    - content.md
+    - 总目录: 
+      - 目录: Content/1-content.md
+      - 数学基础: Content/2-数学基础.md
+      - 经济金融: Content/3-经济金融.md
+      - 计算机科学: Content/4-计算机目录.md
+      - 选学内容: Content/5-选学内容.md
   - 数学知识:
-    - Math/概率论.md
-    - Math/数理统计.md
+    - 概率论: Math/概率论.md
+    - 数理统计: Math/数理统计.md
   - 经济学知识:
-    - Economics/微观经济学/微观经济学-导言.md
-    - Economics/宏观经济学.md
-    - Economics/货币金融学.md
-    - Economics/银行管理.md
+    - 微观经济学:
+      - 微观经济学-导言: Economics/微观经济学/微观经济学-导言.md
+    - 宏观经济学: Economics/宏观经济学.md
+    - 货币金融学: Economics/货币金融学.md
+    - 银行管理: Economics/银行管理.md
+    - 公司理财: 
+      - 公司理财-导言: Economics/公司理财/公司理财-导言.md
   - 计算机知识:
-    - Computer/博客建立和维护.md
-    - Computer/大学计算机基础.md
-    - Computer/机器学习.md
-    - Computer/深度学习.md
+    - 博客建立和维护: Computer/博客建立和维护.md
+    - coding-bug和排错: Computer/coding-bug和排错.md
+    - 大学计算机基: Computer/大学计算机基础.md
+    - 机器学习: Computer/机器学习.md
+    - 深度学习: Computer/深度学习.md
   - 个人向:
-    - Entertainment/一些趣事.md
+    - 一些趣事: Entertainment/一些趣事.md
