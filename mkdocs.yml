@@ -120,10 +120,12 @@ nav:
     - 公司理财: 
       - 公司理财-导言: Economics/公司理财/公司理财-导言.md
   - 计算机知识:
-    - 博客建立和维护: Computer/博客建立和维护.md
     - coding-bug和排错: Computer/coding-bug和排错.md
     - 大学计算机基: Computer/大学计算机基础.md
     - 机器学习: Computer/机器学习.md
-    - 深度学习: Computer/深度学习.md
+    - 深度学习: 
+      - 深度学习: Computer/深度学习.md
+      - PyTorch深度学习快速入门教程: Computer/Pytorch入门教程.md
+    - 强化学习: Computer/强化学习/强化学习总论.md
   - 个人向:
     - 一些趣事: Entertainment/一些趣事.md

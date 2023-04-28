@@ -10,6 +10,9 @@ comments: true
 
 博客页面请[点击此处](https://dingdebin.github.io/)
 
+???+ danger "danger"
+    博客还有许多内容尚未完成，望您海涵。
+
 致谢：
 
 - 特别感谢我的小伙伴[yi_liu](https://yliu-fe.github.io)提供的知识支持和建站相关问题的解决，也推荐他的博客站点。
