@@ -1,0 +1,1602 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="我的个人博客">
+      
+      
+      
+        <meta name="author" content="dingdebin">
+      
+      
+        <link rel="canonical" href="https://dingdebin.github.io/Math/%E6%A6%82%E7%8E%87%E8%AE%BA/1-%E6%A6%82%E7%8E%87%E8%AE%BA%E5%9F%BA%E7%A1%80/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>概率论基础和特殊的离散分布 - 金融学习</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Noto Sans SC";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="金融学习" class="md-header__button md-logo" aria-label="金融学习" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            金融学习
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              概率论基础和特殊的离散分布
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="切换为夜间模式"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="切换为夜间模式" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="cyan"  aria-label="切换为日间模式"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="切换为日间模式" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/dingdebin/dingdebin.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dingdebin
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        关于博客
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        数学知识
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Economics/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6-%E5%AF%BC%E8%A8%80/" class="md-tabs__link">
+        经济学知识
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Computer/coding-bug%E5%92%8C%E6%8E%92%E9%94%99/" class="md-tabs__link">
+        计算机知识
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Entertainment/%E4%B8%80%E4%BA%9B%E8%B6%A3%E4%BA%8B/" class="md-tabs__link">
+        个人向
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="金融学习" class="md-nav__button md-logo" aria-label="金融学习" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    金融学习
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/dingdebin/dingdebin.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dingdebin
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          关于博客
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="关于博客" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          关于博客
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Welcome to my blog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_2">
+          总目录
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="总目录" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          总目录
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Content/1-content/" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Content/2-%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        数学基础
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Content/3-%E7%BB%8F%E6%B5%8E%E9%87%91%E8%9E%8D/" class="md-nav__link">
+        经济金融
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Content/4-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%AE%E5%BD%95/" class="md-nav__link">
+        计算机科学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Content/5-%E9%80%89%E5%AD%A6%E5%86%85%E5%AE%B9/" class="md-nav__link">
+        选学内容
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          数学知识
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="数学知识" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          数学知识
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          概率论
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="概率论" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          概率论基础和特殊的离散分布
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        概率论基础和特殊的离散分布
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    基本信息
+  </a>
+  
+    <nav class="md-nav" aria-label="基本信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    推荐书籍
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    引言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    概率知识概述
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    随机变量
+  </a>
+  
+    <nav class="md-nav" aria-label="随机变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    随机变量的描述工具（矩等）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    随机变量的处理工具
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    特殊离散分布
+  </a>
+  
+    <nav class="md-nav" aria-label="特殊离散分布">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    伯努利分布***
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    二项分布**
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    几何分布
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    泊松分布***
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    离散均匀分布
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    其他离散分布
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-%E7%89%B9%E6%AE%8A%E7%9A%84%E8%BF%9E%E7%BB%AD%E5%88%86%E5%B8%83/" class="md-nav__link">
+        特殊的连续分布
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        极限定理
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" class="md-nav__link">
+        数理统计
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          经济学知识
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="经济学知识" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          经济学知识
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          微观经济学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="微观经济学" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          微观经济学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Economics/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6-%E5%AF%BC%E8%A8%80/" class="md-nav__link">
+        微观经济学-导言
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Economics/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" class="md-nav__link">
+        宏观经济学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Economics/%E8%B4%A7%E5%B8%81%E9%87%91%E8%9E%8D%E5%AD%A6/" class="md-nav__link">
+        货币金融学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Economics/%E9%93%B6%E8%A1%8C%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        银行管理
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Economics/%E4%BC%9A%E8%AE%A1%E5%AD%A6/%E4%BC%9A%E8%AE%A1%E5%AD%A6/" class="md-nav__link">
+        会计学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
+          公司理财
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="公司理财" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          公司理财
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Economics/%E5%85%AC%E5%8F%B8%E7%90%86%E8%B4%A2/%E5%85%AC%E5%8F%B8%E7%90%86%E8%B4%A2-%E5%AF%BC%E8%A8%80/" class="md-nav__link">
+        公司理财-导言
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          计算机知识
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="计算机知识" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          计算机知识
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Computer/coding-bug%E5%92%8C%E6%8E%92%E9%94%99/" class="md-nav__link">
+        coding-bug和排错
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Computer/%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        大学计算机基
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Computer/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+        机器学习
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          深度学习
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="深度学习" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          深度学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Computer/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+        深度学习
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Computer/Pytorch%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        PyTorch深度学习快速入门教程
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Computer/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E6%80%BB%E8%AE%BA/" class="md-nav__link">
+        强化学习
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          个人向
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="个人向" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          个人向
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Entertainment/%E4%B8%80%E4%BA%9B%E8%B6%A3%E4%BA%8B/" class="md-nav__link">
+        一些趣事
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    基本信息
+  </a>
+  
+    <nav class="md-nav" aria-label="基本信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    推荐书籍
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    引言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    概率知识概述
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    随机变量
+  </a>
+  
+    <nav class="md-nav" aria-label="随机变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    随机变量的描述工具（矩等）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    随机变量的处理工具
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    特殊离散分布
+  </a>
+  
+    <nav class="md-nav" aria-label="特殊离散分布">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    伯努利分布***
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    二项分布**
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    几何分布
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    泊松分布***
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    离散均匀分布
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    其他离散分布
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/dingdebin/dingdebin.github.io/edit/master/docs/Math/概率论/1-概率论基础.md" title="编辑此页" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1">概率论基础和特殊的离散分布</h1>
+<h2 id="_2">基本信息</h2>
+<ul>
+<li>先修知识：有一定的微积分知识</li>
+</ul>
+<h3 id="_3">推荐书籍</h3>
+<p>史蒂文·J. 米勒（Steven J. Miller）的《<a href="https://book.douban.com/subject/35193606/">普林斯顿概率论读本</a>》</p>
+<h2 id="_4">引言</h2>
+<p>概率论是一门涉及面非常广的学科，它的应用相当广泛，从纯数学领域到工程领域，处处都有概率论的身影，同时这又是一个基础性工具，概率论的的扎实功底有助于我们了解金融学和金融工程中的随机问题。</p>
+<p>学生时代开始学习概率论的时候，考虑到知识的接受度，都是直接从概率的基础定义开始的，从事件的定义，事件可能发生和必然发生这样一种接近常识的观点开始学习，这是对的，因为在大多数情况下，日常直觉和尝试是理解概率公理及其推论的重要指南。在米勒的《普林斯顿概率论读本》中，作者从罗素悖论开始，讨论了集合论和拓扑学中的一些基础知识，然后进入概率论的基础，有兴趣的同学可以自行阅读，这是科学上研究概率论的必由之路，但是在金融领域中，我们只需要对概率论进行应用即可。</p>
+<p>假设所有可能的结果都是某个给定集合<span class="arithmatex">\(\Omega\)</span>的子集，我们把<span class="arithmatex">\(\Omega\)</span>称为样本空间或结果空间，并把<span class="arithmatex">\(\Omega\)</span>中的元素称作事件，引入概率函数，记作<em>Prob</em>。因此我们可以用<em>Prob(A)</em>来表示事件A发生的概率，简写为<em>P(A)</em>。</p>
+<p>对于概率需要满足的基本条件，数学上叫（柯尔莫戈洛夫）概率公理，通俗表述如下：</p>
+<ol>
+<li>事件发生的概率在[0,1]上；</li>
+<li>空集发生的概率为0，即事件不可能发生，全集发生的概率为1，即（某一）事件一定能发生。</li>
+<li>有限个可数的两两互不相交的事件（不能同时发生）的集合的并集发生的概率，就等于这些事件发生的概率之和。</li>
+</ol>
+<p>概率空间有四条规则，也被称为定理。</p>
+<ol>
+<li>“全概率公式”：在所有事件中，某一事件发生和不发生的概率之和为1，即<span class="arithmatex">\(P(A)+P(A^c)=1\)</span>，<span class="arithmatex">\(A^c\)</span>表示事件A不发生。带引号的全概率公式，实际上是一般全概率公式的特例。</li>
+<li>容斥原理：<span class="arithmatex">\(P(A \cup B)=P(A)+P(B)-P(A\cap B)\)</span>，推广到三个事件，那么</li>
+</ol>
+<div class="arithmatex">\[
+\begin{align*}
+P(A \cup B \cup C) &amp;=P(A)+P(B)+P(C) \\ 
+ &amp;=-P(A\cap B)-P(A\cap C)-P(B\cap C) \\ 
+ &amp;= +P(A \cap B \cap C)
+\end{align*}
+\]</div>
+<ol>
+<li>
+<p>如果<span class="arithmatex">\(A \subset  B\)</span>，那么<span class="arithmatex">\(P(A) \leqslant P(B)\)</span>。然而，如果A是B的真子集，那么不一定有<span class="arithmatex">\(P(A) &lt; P(B)\)</span>，但是可以确定有<span class="arithmatex">\(P(B)=P(A)+P(B \cap A^c)\)</span>，其中<span class="arithmatex">\(B \cap A^c\)</span>指的是B中不属于A的元素，即B发生与A不发生的交集。</p>
+</li>
+<li>
+<p>如果<span class="arithmatex">\(\forall i\)</span>，均有<span class="arithmatex">\(A_i \subset B\)</span>，那么<span class="arithmatex">\(P(\cup_i A_i)\leqslant P(B)\)</span>。</p>
+</li>
+</ol>
+<p>证明过程相见推荐书籍。</p>
+<h2 id="_5">概率知识概述</h2>
+<ul>
+<li>概率公理：用直觉理解。</li>
+<li>独立性：事件之间的关系。</li>
+<li>条件概率：需要认识到，事件并不总是独立发生的，一件事情的发生可能会对另外的事情带来影响，因此就引入了条件概率的定义，即在已知其他时间发生的前提下，某个事件发生的概率有多大。</li>
+<li>贝叶斯定理：</li>
+<li>先验概率和后验概率：</li>
+<li>全概率公式（全概率法则）：</li>
+</ul>
+<h2 id="_6">随机变量</h2>
+<p>随机变量开始才算是可以将概率论和其他学科相结合。随机变量根据变量离散与否可以分为两类，一类是离散随机变量，一类是连续随机变量（需要：微积分基本定理）。
+随机变量可以用以下两个函数来表示：</p>
+<ul>
+<li>概率密度函数（probability density function, PDF）</li>
+<li>累积分布函数（cumulative distribution function, CDF）</li>
+</ul>
+<p>考虑不同随机变量之间的组合时有多变量联合分布</p>
+<ul>
+<li>联合分布</li>
+<li>边缘分布密度函数</li>
+</ul>
+<h3 id="_7">随机变量的描述工具（矩等）</h3>
+<p>掌握工具的含义和计算方法，互相之间的关系</p>
+<ul>
+<li>矩和中心矩（需要：泰勒级数）：</li>
+<li>期望（也叫均值）：期望的线性性质（和的期望等于期望的和）</li>
+<li>方差：用期望计算方差的公式（<span class="arithmatex">\(Var(X)=E[X^2]-E[X]^2\)</span>）</li>
+<li>期望和方差的性质：<ul>
+<li>相互独立的随机变量X和Y有以下关系：<span class="arithmatex">\(E[XY]=E[X]E[Y]\)</span>,<span class="arithmatex">\(E[(X-\mu_X)(Y-\mu_Y)]=E[X-\mu_X]E[Y-\mu_Y]=0\)</span>。简单证明思路，常数<span class="arithmatex">\(\mu_X\)</span>的期望值仍然是常数。</li>
+<li>随机变量的线性组合的期望和方差（<span class="arithmatex">\(Y=aX+b\)</span>）：</li>
+<li>随机变量之和的期望和方差：（投资组合中应用）</li>
+</ul>
+</li>
+<li>偏度（三阶中心矩）</li>
+<li>峰度（四阶中心矩）</li>
+<li>协方差<span class="arithmatex">\(Cov(X,Y)\)</span><ul>
+<li>随机变量之和的协方差</li>
+<li><span class="arithmatex">\(Cov(X,Y)=E[X-\mu_X]E[Y-\mu_Y]=E[XY]-\mu_X\mu_Y\)</span></li>
+<li>协方差大于0表示正相关，协方差小于0表示负相关。协方差等于0不表示相互独立。</li>
+</ul>
+</li>
+<li>相关系数：<ul>
+<li>定义为<span class="arithmatex">\(<span class="arithmatex">\(\rho = \frac{Cov(X,Y)}{\sigma_X\sigma_X}\)</span>\)</span></li>
+<li><span class="arithmatex">\(\rho \in [-1,1]\)</span></li>
+<li>线性关系</li>
+</ul>
+</li>
+</ul>
+<h3 id="_8">随机变量的处理工具</h3>
+<ul>
+<li>(理解即可)卷积（分布相加、中心极限定理中应用）<ul>
+<li>卷积的定义：由X和Y是定义在<span class="arithmatex">\(\mathbb{R}\)</span>上的相互独立的连续型随机变量，概率密度函数分别为<span class="arithmatex">\(f_X,f_Y\)</span>，X和Y的卷积记为<span class="arithmatex">\(f_X * f_Y\)</span>，表达式为
+<span class="arithmatex">\(<span class="arithmatex">\(g(z)=(f_X*f_Y)(z)=\int_{-\infty}^{\infty}f_X(t)f_Y(z-t)dt\)</span>\)</span>
+离散型随机变量同理。将两个函数作为输入，输出一个函数。</li>
+<li>定理：X和Y是定义在<span class="arithmatex">\(\mathbb{R}\)</span>上的相互独立的随机变量，概率密度函数分别为<span class="arithmatex">\(f_X,f_Y\)</span>，如果<span class="arithmatex">\(Z=X+Y\)</span>，那么<span class="arithmatex">\(f_Z(z)=(f_X * f_Y)(z)\)</span>，即卷积可以得到独立的随机变量之和的概率密度函数。</li>
+<li>卷积是可交换的，满足运算交换律，也满足结合律。</li>
+<li>多变量的卷积<span class="arithmatex">\(\rightarrow\)</span>独立地随机变量之和。</li>
+<li>案例：掷多个骰子，并计算各骰子之和数字出现的概率，可以用卷积的方式计算概率密度函数，随着投资数量的增加，得到的图像逐渐接近钟形曲线。</li>
+</ul>
+</li>
+<li>（选学）变量替换公式</li>
+<li>（了解）随机变量的乘积的概率密度函数<ul>
+<li>不需要额外学习是因为乘积运算可以用对数的方法变为加法运算。</li>
+</ul>
+</li>
+</ul>
+<h2 id="_9">特殊离散分布</h2>
+<h3 id="_10">伯努利分布***</h3>
+<p>一次试验验成功与否。<span class="arithmatex">\(P(X=1)=p, P(X=0)=1-p\)</span>，<span class="arithmatex">\(X \sim Bern(p)\)</span>，<span class="arithmatex">\(X\)</span>也称为二元标示随机变量。伯努利分布的推广中单次实验都满足伯努利分布。</p>
+<ul>
+<li>期望：<span class="arithmatex">\(p\)</span></li>
+<li>方差：<span class="arithmatex">\(p(1-p)\)</span></li>
+</ul>
+<h3 id="_11">二项分布**</h3>
+<p>对伯努利分布的推广：n次重复伯努利试验。设n是一个正整数，并设<span class="arithmatex">\(p\in [0,1]\)</span>，随机变量X满足：</p>
+<div class="arithmatex">\[P(X=k)=\begin{cases}
+\binom{n}{k}p^k(1-p)^{n-k} &amp; \text{if }k\in{0,1,2,\cdots,n} \\ 
+0 &amp; \text{others.}
+\end{cases}\]</div>
+<p>就称<span class="arithmatex">\(X\)</span>服从二项分布，记作<span class="arithmatex">\(X \sim Bin(p)\)</span>。</p>
+<ul>
+<li>期望：<span class="arithmatex">\(np\)</span></li>
+<li>方差：<span class="arithmatex">\(np(1-p )\)</span></li>
+</ul>
+<h3 id="_12">几何分布</h3>
+<p>对伯努利分布的进一步推广：重复试验，直到首次成功为止，随机变量X表示首次成功时已经完成的试验次数。随机变量<span class="arithmatex">\(X\)</span>满足：</p>
+<div class="arithmatex">\[
+P(X=n)=\begin{cases}
+p(1-p)^{n-1} &amp; \text{if }n\in{1,2,\cdots} \\ 
+0 &amp; \text{others.}
+\end{cases}
+\]</div>
+<p>那么<span class="arithmatex">\(X\)</span>就服从参数为<span class="arithmatex">\(p\)</span>的几何分布，记作<span class="arithmatex">\(X \sim Geom(p)\)</span>。</p>
+<ul>
+<li>期望：<span class="arithmatex">\(1/p\)</span></li>
+<li>方差：<span class="arithmatex">\(\frac{1-p }{p^2}\)</span></li>
+</ul>
+<h3 id="_13">泊松分布***</h3>
+<p>与伯努利分布有关但是关系不那么密切。可以理解为参数为<span class="arithmatex">\(n\)</span>和<span class="arithmatex">\(p\)</span>的二项分布的极限，其中<span class="arithmatex">\(n\rightarrow \infty\)</span>且<span class="arithmatex">\(np_n\rightarrow \infty\)</span>。设<span class="arithmatex">\(\lambda &gt;0\)</span>，如果随机变量<span class="arithmatex">\(X\)</span>满足</p>
+<div class="arithmatex">\[
+P(X=n)=\begin{cases}
+\frac{\lambda^ne^{-\lambda}}{n!} &amp; \text{if }n\in{0,1,2,\cdots} \\ 
+0 &amp; \text{others.}
+\end{cases}
+\]</div>
+<p>那么<span class="arithmatex">\(X\)</span>就服从参数为<span class="arithmatex">\(\lambda\)</span>的泊松分布，记作<span class="arithmatex">\(X \sim Pois(\lambda)\)</span>，均值和方差都是<span class="arithmatex">\(\lambda\)</span>。</p>
+<p>泊松分布的重要应用在于泊松过程，是计数过程的一种。泊松分布可以表示事件发生的次数，进入某地的人数等。</p>
+<p>示例：假设某天进入银行的顾客数量服从参数为3的泊松分布（<span class="arithmatex">\(\lambda = 3\)</span>），含义就是在一天时间内进入银行的顾客数的平均值为3，那么可以计算某一天进入银行的顾客数量至少为1人的概率，即<span class="arithmatex">\(P(X \geqslant 1)=1-P(X = 0 )\)</span>。</p>
+<p>另外，泊松分布还有一个有趣的定理，即n个独立的随机变量的和的参数就是这些随机变量的参数之和。</p>
+<h3 id="_14">离散均匀分布</h3>
+<p>顾名思义，不详细介绍。典型例子为抛硬币和掷骰子。一共有n种可能的结果，每一种结果出现的可能性相等。</p>
+<div class="arithmatex">\[
+P(X=a)=\begin{cases}
+1/n &amp; \text{if }a\in{a_1,a_2,\cdots,a_n} \\ 
+0 &amp; \text{others.}
+\end{cases}
+\]</div>
+<p>最重要的一种情况，上述集合<span class="arithmatex">\(\{a_1,a_2,\cdots,a_n\}\)</span>为<span class="arithmatex">\(\{a, a+1,\cdots,a+n-1\}\)</span>时：</p>
+<ul>
+<li>均值：所有的值加起来除以n，为<span class="arithmatex">\(a+\frac{n-1}{2}\)</span></li>
+<li>方差：<span class="arithmatex">\(\frac{n^2-1}{12}\)</span></li>
+</ul>
+<h3 id="_15">其他离散分布</h3>
+<ul>
+<li>负二项分布：对伯努利分布的进一步推广：随机变量<span class="arithmatex">\(X\)</span>表示恰好出现<span class="arithmatex">\(r\)</span>次失败时已经成功的次数。了解即可。</li>
+<li>多项分布（Multinominal）：对伯努利分布的进一步推广：n次重复试验，每次试验有k各互不相容的结果，概率分别是<span class="arithmatex">\(p_1,p_2,\cdots,p_k\)</span>。了解即可。</li>
+</ul>
+<p>从下一节开始介绍连续型随机变量的几种特殊分布[[2-特殊的连续分布]]。</p>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2023</span>
+      
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../../Content/5-%E9%80%89%E5%AD%A6%E5%86%85%E5%AE%B9/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 选学内容" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              选学内容
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../2-%E7%89%B9%E6%AE%8A%E7%9A%84%E8%BF%9E%E7%BB%AD%E5%88%86%E5%B8%83/" class="md-footer__link md-footer__link--next" aria-label="下一页: 特殊的连续分布" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              特殊的连续分布
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2023-present D. Ding
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/dingdebin" target="_blank" rel="noopener" title="GitHub | dingdebin" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.tracking", "navigation.tabs", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "navigation.footer", "navigation.top"], "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
